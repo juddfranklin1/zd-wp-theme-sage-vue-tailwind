@@ -29,7 +29,7 @@ This readme assumes you are familiar with [Sage](https://github.com/roots/sage) 
 ```sh
 # @ app/themes/ or wp-content/themes/
 $ git clone git@github.com:zirkeldesign/zd-wp-theme-sage-vue-tailwind.gits
-$ cd sage-vue-tailwind
+$ cd zd-wp-theme-sage-vue-tailwind
 $ composer install
 $ yarn
 $ yarn start / build
@@ -53,13 +53,13 @@ themes/your-theme-name/   # → Root of your Sage based theme
 │   ├── Composers/        # → View composers
 │   ├── Providers/        # → Service providers
 │   ├── admin.php         # → Theme customizer setup
-│   ├── filters.php       # → Theme filters
+│   ├── filters.php        # → Theme filters
 │   ├── helpers.php       # → Helper functions
 │   └── setup.php         # → Theme setup
-├── config/               # → Config files
+├── config/                # → Config files
 │   ├── app.php           # → Application configuration
 │   ├── assets.php        # → Asset configuration
-│   ├── filesystems.php   # → Filesystems configuration
+│   ├── filesystems.php    # → Filesystems configuration
 │   ├── logging.php       # → Logging configuration
 │   └── view.php          # → View configuration
 ├── dist/                 # → Built theme assets (never edit)

@@ -28,7 +28,7 @@ This readme assumes you are familiar with [Sage](https://github.com/roots/sage) 
 
 ```sh
 # @ app/themes/ or wp-content/themes/
-$ git clone git@github.com:alithedeveloper/sage-vue-tailwind.git
+$ git clone git@github.com:zirkeldesign/zd-wp-theme-sage-vue-tailwind.gits
 $ cd sage-vue-tailwind
 $ composer install
 $ yarn

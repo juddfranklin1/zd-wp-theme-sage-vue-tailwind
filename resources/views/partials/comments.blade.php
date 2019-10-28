@@ -34,6 +34,6 @@
       @endalert
     @endif
 
-    @php(comment_form())
+    @php comment_form() @endphp
   </section>
 @endif

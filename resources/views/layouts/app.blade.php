@@ -2,9 +2,9 @@
 <html {!! get_language_attributes() !!}>
   @include('partials.head')
 
-  <body @php(body_class())>
-    @php(wp_body_open())
-    @php(do_action('get_header'))
+  <body @php body_class() @endphp>
+    @php wp_body_open() @endphp
+    @php do_action('get_header') @endphp
     @include('partials.header')
 
     <div id="app">
@@ -21,9 +21,9 @@
       </div>
     </div>
 
-    @php(do_action('get_footer'))
+    @php do_action('get_footer') @endphp
     @include('partials.footer')
 
-    @php(wp_footer())
+    @php wp_footer() @endphp
   </body>
 </html>

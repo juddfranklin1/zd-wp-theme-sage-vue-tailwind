@@ -1,6 +1,12 @@
 const mix = require("laravel-mix");
 require("laravel-mix-purgecss");
 
+// Theme config
+const themeConfig = {
+  themePath: "sage",
+  devUrl: "example.test",
+};
+
 // Public path helper
 const publicPath = path => `${mix.config.publicPath}/${path}`;
 
@@ -22,14 +28,14 @@ const src = path => `resources/assets/${path}`;
 mix
   .setPublicPath("./dist")
   .setResourceRoot(
-    `/app/themes/sage/${mix.config.publicPath}/`
+    `/app/themes/${themeConfig.themePath}/${mix.config.publicPath}/`
   )
   .webpackConfig({
     output: { publicPath: mix.config.resourceRoot },
   });
 
 // Browsersync
-mix.browserSync("example.test");
+mix.browserSync(`${themeConfig.devUrl}`);
 
 // Styles
 mix.sass(src`styles/app.scss`, "styles");

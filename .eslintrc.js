@@ -3,6 +3,7 @@ module.exports = {
   extends: 'eslint:recommended',
   parser: 'babel-eslint',
   globals: {
+    Vue: true,
     wp: true
   },
   env: {
